@@ -1,0 +1,212 @@
+import java.util.Scanner;
+public class counter_hp{
+    public static void main(String[]args) {
+        Scanner input=new Scanner (System.in);
+        String kembali = "Y";
+        String nama, alamat;
+        int tggi;
+        int pilihan, bayar,hari,ds ,kmr,pil;
+        while(kembali.equalsIgnoreCase("Y")){
+
+            System.out.println("\t|       PROGRAM MENU PENJUALAN HP             |");
+            System.out.println("\t|---------------------------------------------|");
+            System.out.println("\t|            Menu Utama penjualan hp           |");
+            System.out.println();
+            System.out.println(" 1. IDENTITAS PEMBELI");
+            System.out.println(" 2. INFORMASI PENJUAL ");
+            System.out.println(" 3. KONTER");
+            System.out.println(" 4. BATAL/KELUAR");
+            System.out.print("\n  Menu Pilihan Anda : ");
+            pilihan = input.nextInt();
+            switch(pilihan)
+            {
+                case 1 :
+                    System.out.print("\n\t*** Isikan Identitas Pembeli di bawah ini *** \n");
+                    System.out.print(".Nama   : ");
+                    nama = input.next();
+                    System.out.print(".Alamat : ");
+                    alamat = input.next();
+                    System.out.print(". Jenis Kelamin   : ");
+                    tggi = input.nextInt();
+                    System.out.println();
+                    System.out.println("\tApa hp yang inggin di beli ?");
+                    System.out.println();
+                    System.out.println("1. iphone");
+                    System.out.println("2. xiomi");
+                    System.out.println("3. samsung");
+                    System.out.print("Masukan pilihan Anda : ");
+                    pil = input.nextInt();
+                    if(pil == 1){
+                        System.out.println("\n\t* Identitas yang anda masukan *");
+                        System.out.println("\nNama           : "+nama);
+                        System.out.println("Alamat         : "+alamat);
+                        System.out.println("Jenis Kelamin   : "+tggi);
+                        System.out.println(nama+" membeli_hp iphone");}
+                    else if(pil == 2){
+                        System.out.println("\n\t* Identitas yang anda masukan *");
+                        System.out.println("\nNama           : "+nama);
+                        System.out.println("Alamat         : "+alamat);
+                        System.out.println("Jenis Kelamin   : "+tggi);
+                        System.out.println(nama+" membeli hp xiomi");}
+                    else{
+                        System.out.println("\n\t* Identitas yang anda masukan *");
+                        System.out.println("\nNama           : "+nama);
+                        System.out.println("Alamat         : "+alamat);
+                        System.out.println("Jenis Kelamin  : "+tggi);
+                        System.out.println(nama+" membeli hp  samsung");
+                        System.out.println();}
+                    break;
+                case 2 :
+                    System.out.println("=========================");
+                    System.out.println("\t*Pilih penjual*");
+                    System.out.println("1.jenis hp");
+                    System.out.println("2.spesifikasi hp");
+                    System.out.println("3.seri hp");
+                    System.out.print(" Masukan penjual Pilihan Anda .. : ");
+                    ds = input.nextInt();
+                    if (ds == 1)
+                    {
+                        System.out.println("\n\tDaftar penjual hp");
+                        System.out.print("\t------------------------------------\n");
+                        System.out.println("1. aris");
+                        System.out.println("   - Waktu membeli : Senin-Selasa , 09.00- 10.00");
+                        System.out.println("   - Telp : 08222868933\n");
+                        System.out.println("2. ezza ");
+                        System.out.println("   - Waktu membeli : Rabu-Kamis , 07.00- 08.00");
+                        System.out.println("   - Telp : 08211866444\n");
+                        System.out.println("3. davis");
+                        System.out.println("   - Waktu membeli : jum'at-Sabtu , 10.00- 10.30.00");
+                        System.out.println("   - Telp : 08292243999\n");
+                        System.out.println();
+                    }
+                    if (ds == 2)
+                    {
+                        System.out.println("\n\tDaftar penjual hp");
+                        System.out.print("\t------------------------------\n");
+                        System.out.println("1. Ayas");
+                        System.out.println("   - Waktu penjualan : Senin-Selasa , 11.00- 12.00");
+                        System.out.println("   - Telp : 08122425672\n");
+                        System.out.println("2. Yuda");
+                        System.out.println("   - Waktu Penjualan : Rabu-Kamis , 09.00- 09.30");
+                        System.out.println("   - Telp : 08299864329\n");
+                        System.out.println("3. Wahyu");
+                        System.out.println("   - Waktu Penjualan : jum'at-Sabtu , 09.00- 09.30");
+                        System.out.println("   - Telp : 08342756377\n");
+                        System.out.println();
+                    }
+                    if (ds == 3)
+                    {
+                        System.out.println("\n\tDaftar Dokter Spesialis Tulang");
+                        System.out.print("\t-------------------------------\n");
+                        System.out.println("1. gilang");
+                        System.out.println("   - Waktu Praktek : Senin-Selasa , 08.00- 12.00");
+                        System.out.println("   - Telp : 0827798677\n");
+                        System.out.println("2. adit");
+                        System.out.println("   - Waktu Praktek : Rabu-Kamis , 08.00- 11.00\n");
+                        System.out.println("   - Telp : 0876467822");
+                        System.out.println("3. jarwo");
+                        System.out.println("   - Waktu praktek : jum'at-Sabtu , 08.00- 09.00\n");
+                        System.out.println("   - Telp : 0854786711\n");
+                        System.out.println();
+                    }
+                    break;
+                case 3 :
+                    System.out.println("\nPilih tipe HP yang Anda inginkan");
+                    System.out.println("1. iphone x");
+                    System.out.println("2. iphone xr");
+                    System.out.println("3. xiomi a3");
+                    System.out.println("4. xiomi a4");
+                    System.out.println("5. samsung a30");
+                    System.out.println("6. samsung a40");
+                    System.out.print("Pilih HP yang akan anda pesan = ");
+                    kmr = input.nextInt();
+                    if (HP == 1)
+                    {
+                        System.out.println("\n\t=== iphone x ===");
+                        System.out.print("Nama Anda : ");
+                        nama = input.next();
+                        System.out.println(nama+" Telah memilih iphone x\n");
+                        System.out.println("Harga sewa Kamar = Rp. 7.000.000");
+                        System.out.print("Harga hp = ");
+                        hari = input.nextInt();
+                        bayar = 70000000;
+                        System.out.print(" Total Harga HP yang harus Anda bayar adalah : Rp."+bayar);
+                        System.out.println("\n");
+                    }
+                    if (HP == 3)
+                    {
+                        System.out.println("\n\t=== iphone xr ===");
+                        System.out.print("Nama Anda : ");
+                        nama = input.next();
+                        System.out.println(nama+" Telah memilih iphone xr\n");
+                        System.out.println("Harga HP= Rp. 5.500.000");
+                        System.out.print("Berapa hari garansi = ");
+                        hari = input.nextInt();
+                        bayar = 5500000;
+                        System.out.print(" Total Harga HP yang harus Anda bayar adalah : Rp."+bayar);
+                        System.out.println("\n");
+                    }
+                    if (kmr == 3)
+                    {
+                        System.out.println("\n\t=== xiomi a30 ===");
+                        System.out.print("Nama Anda : ");
+                        nama = input.next();
+                        System.out.println(nama+" Telah memilih samsung a30\n");
+                        System.out.println("Harga HP = Rp. 3.550.000");
+                        System.out.print("Berapa hari garansi = ");
+                        hari = input.nextInt();
+                        bayar = 3550000;
+                        System.out.print(" Total Harga HP yang harus Anda bayar adalah : Rp."+bayar);
+                        System.out.println("\n");
+                    }
+                    if (kmr==4)
+                    {
+                        System.out.println("\n\t=== xiomi a4 ===");
+                        System.out.print("Nama Anda : ");
+                        nama = input.next();
+                        System.out.println(nama+" Telah memilih xiomi a4\n");
+                        System.out.println("Harga HP = Rp. 1.750.000/Hari");
+                        System.out.print("Berapa hari garansi = ");
+                        hari = input.nextInt();
+                        bayar = 1750000;
+                        System.out.print(" Total Harga HP yang harus Anda bayar adalah : Rp."+bayar);
+                        System.out.println("\n");
+                    }
+                    if (kmr == 5)
+                    {
+                        System.out.println("\n\t=== samsung a30 ===");
+                        System.out.print("Nama Anda : ");
+                        nama = input.next();
+                        System.out.println(nama+" Telah memilih samsung a30\n");
+                        System.out.println("Harga HP = Rp. 1.000.000/Hari");
+                        System.out.print("Berapa hari garansi = ");
+                        hari = input.nextInt();
+                        bayar = 1000000;
+                        System.out.print(" Total Harga hp yang harus di bayar adalah : Rp."+bayar);
+                        System.out.println("\n");
+                    }
+                    if (kmr == 6) {
+                        System.out.println("\n\t=== samsung a40 ===");
+                        System.out.print("Nama Anda : ");
+                        nama = input.next();
+                        System.out.println(nama + " Telah memilih samsung a40\n");
+                        System.out.println("Harga HP = Rp. 1.000.000/Hari");
+                        System.out.print("Berapa hari garansi = ");
+                        hari = input.nextInt();
+                        bayar = 1000000 ;
+                        System.out.print(" Total Harga HP yang harus Anda bayar adalah : Rp." + bayar);
+                        System.out.println("\n");
+                    }
+                        break;
+                        case 4 :
+                            System.out.print("Exit?¦\n");
+                            break;
+                        default:
+                            System.out.print("Menu tidak tersedia\n");
+                            break;
+                    }
+                    System.out.print("Kembali ke Menu ? Y/T : ");
+                    kembali = input.next();
+            }
+    }
+}
